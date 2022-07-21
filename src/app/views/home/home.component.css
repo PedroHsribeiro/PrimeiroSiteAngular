@@ -1,0 +1,595 @@
+.logo{
+    height: 130px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+    background-color: #103A8F;
+    display: flex;
+    align-items: center;
+}
+.items-logo{
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.items-logo2{
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo-text{
+    max-width: 391px;
+    width: 100%;
+    height: 58px;
+    justify-self: center;
+    margin: 0 auto;
+}
+.items-logo2 a{
+    text-decoration: none;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    color: white;
+    transition: 0.3s ease-in;
+}
+.items-logo2 a:hover{
+    color: rgb(184, 184, 184);
+}
+.menuDepartamentos2{
+    text-decoration: none;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.espaco{
+    max-width: 360px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search{
+    width: 40px;
+    height: 40px;
+}
+.espaco #search{
+    max-width: 300px;
+    width: 100%;
+    height: 40px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+}
+.espaco .search-box{
+    max-width: 300px;
+    width: 100%;
+}
+.logo-icon{
+    display: none;
+}
+.menuDepartamentos2{
+    display: none;
+}
+.menu-icon{
+    display: none;
+}
+#menu{
+    background-color: #316ED4;
+    height: 73px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.menuLogin2{
+    display: none;
+}
+.menuCarrinho2{
+    display: none;
+}
+#menu a{
+    text-decoration: none;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    color: white; 
+    transition: 0.3s ease-in;
+}
+#menu a:hover{
+    color: rgb(184, 184, 184);
+}
+
+body{
+    background-color: white;
+    width: 100%;
+    min-width: 320px;
+}
+.carrosel{
+    position: relative;
+    max-width: 1463px;
+    margin: 0 auto;
+}
+.banner-home{
+    max-width: 1463px;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.bannerVisibility{
+    display: block;
+    animation: fadeVisibility 0.5s;
+}
+.carrosel .botoes-banner{
+    display: flex;
+    max-width: 1463px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.carrosel .botoes-banner button{
+    border: 0;
+    max-width: 70px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background-color: #103a8f00;
+    transition: 0.3s;
+}
+.carrosel .botoes-banner button:hover{
+    background-color: rgba(212, 212, 212, 0.671);
+}
+.carrosel .botoes-banner img{
+    max-width: 50px;
+    width: 100%;
+    max-height: 50px;
+    height: 100%;
+}
+
+@keyframes fadeVisibility {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: opacity linear;
+    }
+  }
+.novidades-mania-background{
+    height: 100px;
+    max-width: 1463px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #103A8F;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    margin: 10px auto;
+}
+.title-novidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.title-novidades h2{
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.title-novidades p{
+    margin: 0px;
+    font-size: 16px;
+    width: 303.17px;
+}
+.form-novidades{
+    max-width: 850px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.form-novidades-name{
+    max-width: 300px;
+    width: 100%;
+}
+.form-novidades #name{
+    max-width: 300px;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    color: black;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.form-novidades-email{
+    width: 100%;
+    max-width: 300px;
+}
+.form-novidades #email{
+    max-width: 300px;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    color: black;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.form-novidades-button{
+    width: 100%;
+    max-width: 190px;
+}
+.button-novidades{
+    max-width: 190px;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    color: white;
+    background: #495057;
+    border-style: none;
+    font-weight: bold;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.categorias-de-produtos{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1463px;
+    width: 100%;
+    margin: 10px auto;
+}
+.console{
+    max-width: 460px;
+}    
+.restante{
+    max-width: 963px;
+    width: 100%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.restante2{
+    width: 100%;
+    max-width: 963px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.pc-gamer{
+    padding-left: 10px;
+}
+#perifericos2{
+    display: none;
+}
+#pc-gamer2{
+    display: none;
+}
+#hardware2{
+    display: none;
+}
+#console2{
+    display: none;
+}
+.produtos-700px{
+    display: none;
+}
+.footer{
+    background-color: #103A8F;
+    width: 100%;
+}
+.footer .coluna-footer-itens-lista{
+    list-style: none;
+    list-style-type: none;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.footer .coluna-footer-itens-lista li{
+    padding: 15px 0px;
+}
+.footer .coluna-footer-itens{
+    color: white;
+    text-align: left;
+    width: 205px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.items-footer{
+    max-width: 1463px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 0px 34px;
+}
+
+@media screen and (max-width: 1024px){
+    .logo{
+        height: 50px;
+    }
+    .items-logo{
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .items-logo2{
+        display: none;
+    }
+    .items-logo2 a{
+        font-size: 16px;
+    }
+    .espaco{
+        max-width: 29px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #search-box{
+        max-width: 190px;
+        width: 100%;
+        display: none;
+        position: absolute;
+        left: 59px;
+    }
+    .espaco #search{
+        height: 29px;
+        width: 190px;
+        font-size: 16px;
+        align-self: center;
+    }
+    .search{
+        width: 29px;
+        height: 29px;
+    }
+    .logo-icon{
+        display: flex;
+    }
+    .menu-icon{
+        display: flex;
+    }
+    #menu{
+        max-width: 250px;
+        width: 100%;
+        max-height: 216px;
+        height: 100%;
+
+        background-color: #103A8F;
+        
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        transition: 0.3s ease-in;
+    }
+    #menu a{
+        width: 100%;
+    }
+    .menuMembros{
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    #menu a:hover{
+        background-color: rgb(151, 151, 151);
+        color: black;      
+    }
+    #menu .menuLogin2{
+        display: block;
+    }
+    #menu .menuCarrinho2{
+        display: block;
+    }
+    .logo-text{
+        display: none;
+    }
+    .banner-home{
+        width: 100%;
+    }
+    .novidades-mania-background{
+        height: 57px;
+    }
+    .title-novidades h2{
+        font-size: 16px;
+    }
+    .title-novidades p{
+        display: none;
+    }
+    .form-novidades{
+        width: 100%;
+        max-width: 580px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .form-novidades #name{
+        max-width: 213px;
+        width: 100%;
+        height: 27px;
+        font-size: 12px;
+    }
+    .form-novidades #email{
+        max-width: 213px;
+        width: 100%;
+        height: 27px;
+        font-size: 12px;
+    }
+    .form-novidades .button-novidades{
+        max-width: 134px;
+        width: 100%;
+        height: 27px;
+        font-size: 12px;
+    }
+    .categorias-de-produtos{
+        max-width: 1024px;
+    }
+    .restante{
+       width: 100%;
+       max-width: 673px;
+    }
+    .restante2{
+        max-width: 673px;
+    }
+    #perifericos{
+        display: none;
+    }
+    #pc-gamer{
+        display: none;
+    }
+    #hardware{
+        display: none;
+    }
+    #console{
+        display: none;
+    }
+    #perifericos2{
+        display: flex;
+    }
+    #pc-gamer2{
+        display: flex;
+    }
+    #hardware2{
+        display: flex;
+        max-width: 673px;
+        width: 100%;
+    }
+    #console2{
+        display: flex;
+        max-width: 322px;
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 830px) {
+    .items-logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 10px;
+    }
+    .items-logo2{
+        display: none;
+    }
+    .menuDepartamentos2{
+        display: none;
+    }
+    .espaco{
+        width: 29px;
+    }
+    .espaco .search{
+        height: 30px;
+        width: 30px;
+    }
+    .menu-icon{
+        display: flex;
+    }
+    .items-footer{
+        display: flex;
+        flex-direction: column;
+        border-bottom: #ffffff;
+        padding: 10px;
+    }
+    .items-footer h3{
+        font-size: 16px; 
+        margin: 5px;
+        font-weight: 600;
+    }
+    .footer #inst{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-bottom: solid 1px white;
+    }
+    .footer #depart{
+        border-bottom: solid 1px white;
+        display: flex;
+        width: 100%;
+    }
+    .footer #accou{
+        border-bottom: solid 1px white;
+        display: flex;
+        width: 100%;
+    }
+    .footer #atend{
+        border-bottom: solid 1px white;
+        display: flex;
+        width: 100%;
+    }
+    #inst2{
+        display: none;
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+    #inst2 li{
+        padding: 5px 0px;
+    }
+    .footer #depart2{
+        display: none;
+        flex-direction: column;
+        margin: 0px 20px;
+    } 
+    #depart2 li{
+        padding: 5px 0px;
+    }
+    .footer #accou2{
+        display: none;
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+    #accou2 li{
+        padding: 5px 0px;
+    }
+    .footer #atend2{
+        display: none;
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+    #atend2 li{
+        padding: 5px 0px;
+    }
+}
+@media screen and (max-width: 700px){
+    .produtos-700px{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .console{
+        display: none;
+    }
+    .restante{
+        display: none;
+    }
+    .restante2{
+        display: none;
+    }
+}
+@media screen and (max-width: 428px){
+    .novidades-mania-background{
+        display: none;
+    }
+}
