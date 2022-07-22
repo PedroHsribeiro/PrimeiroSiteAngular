@@ -1,0 +1,100 @@
+.footer{
+    background-color: #103A8F;
+    width: 100%;
+}
+.footer .coluna-footer-itens-lista{
+    list-style: none;
+    list-style-type: none;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.footer .coluna-footer-itens-lista li{
+    padding: 15px 0px;
+}
+.footer .coluna-footer-itens{
+    color: white;
+    text-align: left;
+    width: 205px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.items-footer{
+    max-width: 1463px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 0px 34px;
+}
+
+@media screen and (max-width: 830px) {
+    .items-footer{
+        display: flex;
+        flex-direction: column;
+        border-bottom: #ffffff;
+        padding: 10px;
+    }
+    .items-footer h3{
+        font-size: 16px; 
+        margin: 5px;
+        font-weight: 600;
+    }
+    .footer #inst{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-bottom: solid 1px white;
+    }
+    .footer #depart{
+        border-bottom: solid 1px white;
+        display: flex;
+        width: 100%;
+    }
+    .footer #accou{
+        border-bottom: solid 1px white;
+        display: flex;
+        width: 100%;
+    }
+    .footer #atend{
+        border-bottom: solid 1px white;
+        display: flex;
+        width: 100%;
+    }
+    #inst2{
+        display: none;
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+    #inst2 li{
+        padding: 5px 0px;
+    }
+    .footer #depart2{
+        display: none;
+        flex-direction: column;
+        margin: 0px 20px;
+    } 
+    #depart2 li{
+        padding: 5px 0px;
+    }
+    .footer #accou2{
+        display: none;
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+    #accou2 li{
+        padding: 5px 0px;
+    }
+    .footer #atend2{
+        display: none;
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+    #atend2 li{
+        padding: 5px 0px;
+    }
+}

@@ -1,0 +1,130 @@
+.login-registration{
+    max-width: 1463px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 50px auto;
+    padding-top: 40px;
+}
+.login{
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;    
+}
+.login h2{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    color: #495057;
+}
+.login #login-email{    
+    max-width: 400px;
+    width: 100%;
+    height: 40px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.login #login-password{    
+    max-width: 400px;
+    width: 100%;;
+    height: 40px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.login .button-account-login{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background: #316ED4;
+    max-width: 400px;
+    width: 100%;
+    height: 40px;
+}
+.partition{
+    width: 2px;
+    height: 450px;
+    margin: 0px 6px; 
+    background-color: #ccd2d8;
+}
+.account-creation{
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;    
+}
+.account-creation h2{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    color: #495057;
+}
+.account-creation input{    
+    max-width: 400px;
+    width: 100%;
+    height: 40px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.account-creation .button-account-register{
+    font-weight: bold;
+    font-size: 20px;
+    color: #316ED4;
+    background: #ffffff;
+    border: 2px solid #316ED4;
+    max-width: 400px;
+    width: 100%;
+    height: 40px;
+}
+@media screen and (max-width: 1024px){
+    .login-registration{
+        max-width: 600px;
+        width: 100%;
+        height: 550px;
+        display: flex;
+        align-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .login h2{        
+        font-size: 12px;
+    }
+    .login #login-email{    
+        height: 30px;
+        font-size: 12px;
+        margin-bottom: 16px;
+    }
+    .login #login-password{    
+        height: 30px;
+        font-size: 12px;
+        margin-bottom: 16px;
+    }
+    .login .button-account-login{
+        font-weight: bold;
+        font-size: 12px;
+        height: 30px;
+    }
+    .partition{
+        max-width: 450px;
+        width: 100%;
+        height: 2px;
+    }
+    .account-creation h2{
+        font-size: 12px;
+    }
+    .account-creation input{    
+        height: 30px;
+        font-size: 12px;
+    }
+    .account-creation .button-account-register{
+        font-size: 12px;
+        height: 30px;
+    }
+}
