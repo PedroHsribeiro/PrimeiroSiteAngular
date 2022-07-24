@@ -1,24 +1,33 @@
 <app-header></app-header>
 <main>
-    <form (ngSubmit)="receberDados()">
-        <div class="login-registration">
-            <div class="login">
-                <h2>JÁ TENHO UMA CONTA</h2>
-                <input placeholder="E-mail *" name="email" type="email" id="login-email" required [(ngModel)] = "userModel.email">
-                <input placeholder="Senha *" name="password" type="password" id="login-password" required [(ngModel)] = "userModel.password">
-                <input type="submit" class="button-account-login" value="LOGIN">
+    <div class="login_page">
+        <form (ngSubmit)="receberDados()">
+            <div class="login-registration">
+                <div class="login">
+                    <h2>JÁ TENHO UMA CONTA</h2>
+                    <input placeholder="E-mail *" name="email" type="email" id="login-email" required
+                        [(ngModel)]="userModel.email">
+                    <input placeholder="Senha *" name="password" type="password" id="login-password" required
+                        [(ngModel)]="userModel.password">
+                    <input type="submit" class="button-account-login" value="LOGIN">
+                </div>
             </div>
-            <div class="partition"></div>
+        </form>
+        <div class="partition"></div>
+        <form (ngSubmit)="cadastrarDados()">
             <div class="account-creation">
                 <h2>QUERO ME CADASTRAR</h2>
-                <input placeholder="E-mail *" name="email" type="email" id="register-email" required [ngModel]>
-                <input placeholder="Crie sua senha *" name="password" type="password" id="register-password" required [ngModel]>
-                <input placeholder="Repita sua senha *" name="password" type="password" id="register-password-confirmation" required [ngModel]>
-                <input placeholder="CPF *" name="CPF" type="number" id="register-cpf" required [ngModel]>
-                <input placeholder="CEP *" name="CEP" type="number" id="register-cep" required [ngModel]>
+                <input placeholder="E-mail *" name="email" type="email" id="register-email" required
+                    [(ngModel)]="newUserModel.email">
+                <input placeholder="Crie sua senha *" name="password" type="password" id="register-password" required
+                    [(ngModel)]="newUserModel.password">
+                <input placeholder="Nome *" name="firstname" type="text" id="register-cpf" required
+                    [(ngModel)]="newUserModel.firstname">
+                <input placeholder="Sobrenome *" name="lastname" type="text" id="register-cep" required
+                    [(ngModel)]="newUserModel.lastname">
                 <input type="submit" class="button-account-register" value="CADASTRAR">
             </div>
-        </div>
-    </form>
+        </form>
+    </div>
 </main>
 <app-footer></app-footer>
