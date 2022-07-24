@@ -1,22 +1,24 @@
 <app-header></app-header>
-<div class="main">
-    <div class="login-registration">
-        <div class="login">
-            <h2>JÁ TENHO UMA CONTA</h2>
-            <input placeholder="E-mail *" type="email" id="login-email">
-            <input placeholder="Senha *" type="password" id="login-password">
-            <input type="submit" class="button-account-login" value="LOGIN">
+<main>
+    <form (ngSubmit)="receberDados()">
+        <div class="login-registration">
+            <div class="login">
+                <h2>JÁ TENHO UMA CONTA</h2>
+                <input placeholder="E-mail *" name="email" type="email" id="login-email" required [(ngModel)] = "userModel.email">
+                <input placeholder="Senha *" name="password" type="password" id="login-password" required [(ngModel)] = "userModel.password">
+                <input type="submit" class="button-account-login" value="LOGIN">
+            </div>
+            <div class="partition"></div>
+            <div class="account-creation">
+                <h2>QUERO ME CADASTRAR</h2>
+                <input placeholder="E-mail *" name="email" type="email" id="register-email" required [ngModel]>
+                <input placeholder="Crie sua senha *" name="password" type="password" id="register-password" required [ngModel]>
+                <input placeholder="Repita sua senha *" name="password" type="password" id="register-password-confirmation" required [ngModel]>
+                <input placeholder="CPF *" name="CPF" type="number" id="register-cpf" required [ngModel]>
+                <input placeholder="CEP *" name="CEP" type="number" id="register-cep" required [ngModel]>
+                <input type="submit" class="button-account-register" value="CADASTRAR">
+            </div>
         </div>
-        <div class="partition"></div>
-        <div class="account-creation">
-            <h2>QUERO ME CADASTRAR</h2>
-            <input placeholder="E-mail *" type="email" id="register-email">
-            <input placeholder="Crie sua senha *" type="password" id="register-password">
-            <input placeholder="Repita sua senha *" type="password" id="register-password-confirmation">
-            <input placeholder="CPF *" type="number" id="register-cpf">
-            <input placeholder="CEP *" type="number" id="register-cep">
-            <input type="submit" class="button-account-register" value="CADASTRAR">
-        </div>
-    </div>
-</div>
+    </form>
+</main>
 <app-footer></app-footer>
