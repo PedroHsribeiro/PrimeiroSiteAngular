@@ -93,32 +93,40 @@ function mostrarItens() {
     }
 }
 
-const slides = document.querySelectorAll('[data-js="banner-home"]')
-const nextButton = document.querySelector('[data-js="banner_button--next"]')
-const prevButton = document.querySelector('[data-js="banner_button--prev"]')
+const slides = document.querySelectorAll("banner-home")
+document.getElementById("banner_button--next").addEventListener("click", nextSlide)
+document.getElementById("banner_button--prev").addEventListener("click", prevSlide)
 
 const lastSlideIndex = slides.length - 1
-let currentSlideIndex = 0 
+let currentSlideIndex = 0
 
-const manipulateSlideClasses = correctSlideIndex => {
-    slides.forEach(slide => slide.classList.remove('bannerVisibility'))
+function nextSlide(){
+
+    if (currentSlideIndex === lastSlideIndex) {
+        currentSlideIndex = 0
+    } else {
+        currentSlideIndex++
+    }
+
+    slides.forEach(slide => {
+        slide.classList.remove('bannerVisibility')
+    })
+
     slides[currentSlideIndex].classList.add('bannerVisibility')
+
 }
 
-nextButton.addEventListener('click', () => {
+function prevSlide(){
 
-    const correctSlideIndex = currentSlideIndex === lastSlideIndex
-        ? currentSlideIndex = 0
-        : ++currentSlideIndex
+    if (currentSlideIndex === 0) {
+        currentSlideIndex = lastSlideIndex
+    } else {
+        currentSlideIndex--
+    }
 
-    manipulateSlideClasses(correctSlideIndex)
-} )
+    slides.forEach(slide => {
+        slide.classList.remove('bannerVisibility')
+    })
 
-prevButton.addEventListener('click', () => {
-
-    const correctSlideIndex = currentSlideIndex === 0
-        ? currentSlideIndex = lastSlideIndex
-        : --currentSlideIndex
-
-    manipulateSlideClasses(correctSlideIndex)
-})
+    slides[currentSlideIndex].classList.add('bannerVisibility')
+}

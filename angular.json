@@ -26,8 +26,9 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/js/scripts.js",
-              "node_modules/jquery/dist/jquery.min.js"
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/js/scripts.js"
+              
             ]
           },
           "configurations": {

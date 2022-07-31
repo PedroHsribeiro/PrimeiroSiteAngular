@@ -1,5 +1,5 @@
 <app-header></app-header>
-<div class="main">
+<div class="main" onresize="mostrarItens()">
     <div class="carrosel">
         <div data-js="banner-home" class="banner-home nintendo-controle bannerVisibility">
             <img src="/assets/img\nintendo3.jpg" alt="Banner do controle de Super Nintento" width="100%">
@@ -11,10 +11,10 @@
             <img src="/assets/img/lorenzo-herrera-p0j-mE6mGo4-unsplash 1.png" alt="Banner dos computadores" width="100%">
         </div>
         <div class="botoes-banner">
-            <button data-js="banner_button--prev" aria-label="Botão do banner anterior">
+            <button id="banner_button--prev" data-js="banner_button--prev" aria-label="Botão do banner anterior">
                 <img src="/assets/img/seta-esquerda.png" alt="Seta para esquerda para Alterar Banner">
             </button>
-            <button data-js="banner_button--next" aria-label="Botão do próximo banner">
+            <button id="banner_button--next" data-js="banner_button--next" aria-label="Botão do próximo banner">
                 <img src="/assets/img/seta-direita.png" alt="Seta para Direita para Alterar Banner">
             </button>
         </div>

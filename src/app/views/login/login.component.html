@@ -10,6 +10,7 @@
                     <input placeholder="Senha *" name="password" type="password" id="login-password" required
                         [(ngModel)]="userModel.password">
                     <input type="submit" class="button-account-login" value="LOGIN">
+                    <p id="mensagem" *ngIf=" mensagem != '' ">{{ mensagem }}</p>
                 </div>
             </div>
         </form>

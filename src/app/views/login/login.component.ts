@@ -17,14 +17,31 @@ export class LoginComponent implements OnInit {
   }
 
   userModel = new User()
+  mensagem = ""
 
   receberDados() {
     console.log(this.userModel)
 
+    const listaPalavras: string[] = ["select ", "from ", "drop ", "or ", "having ", "by ", "insert ", "exec ", "\"", "\'", "\--", "\#", "\*"]
+
+    listaPalavras.forEach(palavra => {
+      if(this.userModel.email?.toLowerCase().includes(palavra)){
+        this.mensagem = "Dados inválidos." + palavra
+
+        return;
+      }
+      
+    });
+
     this.loginService.login(this.userModel).subscribe((response) => {
       console.log("response:", response)
-    }, (erro) => {
-      console.log(erro)
+      console.log("O status code é: ", response.status)
+
+      this.mensagem = "Bem-vindo, " + response.body.user.firstname
+      console.log(this.mensagem)
+    }, (responseErro) => {
+      console.log("responseErro", responseErro)
+      this.mensagem = responseErro.error
     })
   }
 
@@ -34,7 +51,7 @@ export class LoginComponent implements OnInit {
     console.log(this.newUserModel)
 
     this.registerService.register(this.newUserModel).subscribe((response) => {
-      console.log("response", response)
+      // console.log("response", response)
     }, (erro) => {
       console.log(erro)
     })
