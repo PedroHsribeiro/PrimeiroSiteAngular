@@ -15,7 +15,7 @@
 .footer .coluna-footer-itens{
     color: white;
     text-align: left;
-    width: 205px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -24,22 +24,28 @@
 }
 .items-footer{
     max-width: 1463px;
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin: 0 auto;
-    padding: 0px 34px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 @media screen and (max-width: 830px) {
     .items-footer{
         display: flex;
+        width: auto;
         flex-direction: column;
         border-bottom: #ffffff;
-        padding: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
-    .items-footer h3{
+    .footer .coluna-footer-itens{
+        width: 100%;
+    }
+    .items-footer .coluna-footer-itens h3{
         font-size: 16px; 
         margin: 5px;
         font-weight: 600;

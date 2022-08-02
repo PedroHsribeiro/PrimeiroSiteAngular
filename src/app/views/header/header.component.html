@@ -1,11 +1,11 @@
 <header>
-    <div class="logo">
+    <div class="logo" onresize="mostrarItens()">
         <div class="items-logo">
             <div class="espaco">
                 <div class="search-box" id="search-box">
                     <input placeholder="Pesquisar" type="text" id="search">
                 </div>
-                <a id="search-icon" onclick="mostrarPesquisa()">
+                <a id="search-icon">
                     <img class="search" src="/assets/img/search_img.png" alt="Search icon">
                 </a>
             </div>
@@ -16,7 +16,7 @@
                 </a>
             </div>
             <div class="menu-icon">
-                <a id="menu-icon" onclick="mostrarMenu()">
+                <a id="menu-icon">
                     <img src="/assets/img/menu_img.png" alt="Agrupamento dos itens do menu">
                 </a>
 
